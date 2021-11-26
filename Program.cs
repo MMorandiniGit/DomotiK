@@ -2,6 +2,7 @@
 using System.Threading;
 using System.Collections.Generic;
 using System.Text;
+using static System.Console;
 
 namespace Vs_Code
 {
@@ -30,101 +31,101 @@ namespace Vs_Code
             do
             {
                 
-                Console.WriteLine("-------OPCIONES-------");
-                Console.WriteLine("1) Ver puertas y ventanas");
-                Console.WriteLine("2) Abrir, cerrar, bloquear y desbloquear las puertas y ventanas");
-                Console.WriteLine("0) Salir");
-                opcion = int.Parse(Console.ReadLine());
+                WriteLine("-------OPCIONES-------");
+                WriteLine("1) Ver puertas y ventanas");
+                WriteLine("2) Abrir, cerrar, bloquear y desbloquear las puertas y ventanas");
+                WriteLine("0) Salir");
+                opcion = int.Parse(ReadLine());
                 switch(opcion)
                 {
                     case 1:
                         do
                         {
-                            Console.WriteLine("-------OPCIONES-------");
-                            Console.WriteLine("1) Ver puertas y ventanas de la cocina");
-                            Console.WriteLine("2) Ver puertas y ventanas de las habitaciones");
-                            Console.WriteLine("3) Ver puertas y ventanas del playroom");
-                            Console.WriteLine("4) Ver puertas y ventanas del living");
-                            Console.WriteLine("5) Ver porton del garage");
-                            Console.WriteLine("0) Para volver atras");
-                            opcion2 = int.Parse(Console.ReadLine());
+                            WriteLine("-------OPCIONES-------");
+                            WriteLine("1) Ver puertas y ventanas de la cocina");
+                            WriteLine("2) Ver puertas y ventanas de las habitaciones");
+                            WriteLine("3) Ver puertas y ventanas del playroom");
+                            WriteLine("4) Ver puertas y ventanas del living");
+                            WriteLine("5) Ver porton del garage");
+                            WriteLine("0) Para volver atras");
+                            opcion2 = int.Parse(ReadLine());
                             switch(opcion2)
                             {
                                 case 1:
-                                Console.WriteLine("Puertas: ");
+                                WriteLine("Puertas: ");
                                 cocina.Mostrar();
-                                Console.WriteLine("Ventanas: ");
+                                WriteLine("Ventanas: ");
                                 cocina.MostrarV();
                                 break;
                                 case 2:
-                                Console.WriteLine("Elegi el cuarto: ");
+                                WriteLine("Elegi el cuarto: ");
                                     do
                                     {
-                                        Console.WriteLine("1) Para el cuarto 1");
-                                        Console.WriteLine("2) Para el cuarto 2");
-                                        Console.WriteLine("3) Para el cuarto 3");
-                                        Console.WriteLine("4) Para el cuarto 4");
-                                        Console.WriteLine("0) Para volver");
-                                        opcion3 = int.Parse(Console.ReadLine());
+                                        WriteLine("1) Para el cuarto 1");
+                                        WriteLine("2) Para el cuarto 2");
+                                        WriteLine("3) Para el cuarto 3");
+                                        WriteLine("4) Para el cuarto 4");
+                                        WriteLine("0) Para volver");
+                                        opcion3 = int.Parse(ReadLine());
                                         switch(opcion3)
                                         {
                                             case 1:
-                                            Console.WriteLine("Puerta: ");
+                                            WriteLine("Puerta: ");
                                             cuarto.Mostrar();
-                                            Console.WriteLine("Ventanas: ");
+                                            WriteLine("Ventanas: ");
                                             cuarto.MostrarV();
                                             break;
                                             case 2:
-                                            Console.WriteLine("Puerta: ");
+                                            WriteLine("Puerta: ");
                                             cuarto1.Mostrar();
-                                            Console.WriteLine("Ventanas: ");
+                                            WriteLine("Ventanas: ");
                                             cuarto1.MostrarV();
                                             break;
                                             case 3:
-                                            Console.WriteLine("Puerta: ");
+                                            WriteLine("Puerta: ");
                                             cuarto2.Mostrar();
-                                            Console.WriteLine("Ventanas: ");
+                                            WriteLine("Ventanas: ");
                                             cuarto2.MostrarV();
                                             break;
                                             case 4:
-                                            Console.WriteLine("Puerta: ");
+                                            WriteLine("Puerta: ");
                                             cuarto3.Mostrar();
-                                            Console.WriteLine("Ventanas: ");
+                                            WriteLine("Ventanas: ");
                                             cuarto3.MostrarV();
                                             break;
                                         }
                                     }while(opcion3 != 0);
                                 break;
                                 case 3:
-                                Console.WriteLine("Puertas: ");
+                                WriteLine("Puertas: ");
                                 playroom.Mostrar();
-                                Console.WriteLine("Ventanas: ");
+                                WriteLine("Ventanas: ");
                                 playroom.MostrarV();
                                 break;
                                 case 4:
-                                Console.WriteLine("Pueras: ");
+                                WriteLine("Pueras: ");
                                 living.Mostrar();
-                                Console.WriteLine("Ventanas: ");
+                                WriteLine("Ventanas: ");
                                 living.MostrarV();
                                 break;
                                 case 5:
-                                Console.WriteLine("Elegi el garage: ");
+                                WriteLine("Elegi el garage: ");
                                     do
                                     {
-                                        Console.WriteLine("1) Para ver el garage 1");
-                                        Console.WriteLine("2) Para ver el garage 2");
-                                        Console.WriteLine("0) para volver");
-                                        opcion4 = int.Parse(Console.ReadLine());
+                                        WriteLine("1) Para ver el garage 1");
+                                        WriteLine("2) Para ver el garage 2");
+                                        WriteLine("0) para volver");
+                                        opcion4 = int.Parse(ReadLine());
                                         switch(opcion4)
                                         {
                                             case 1:
                                             
-                                            Console.WriteLine("Garage: ");
+                                            WriteLine("Garage: ");
                                             garage.Mostrar();
                                             break;
                                             case 2:
                                             
-                                            Console.WriteLine("Garage: ");
+                                            WriteLine("Garage: ");
                                             garage1.Mostrar();
                                             break;
                                         }
@@ -137,59 +138,59 @@ namespace Vs_Code
                         do
                         {
                             
-                            Console.WriteLine("-------OPCIONES-------");
-                            Console.WriteLine("1) Cuartos");
-                            Console.WriteLine("2) Cocina");
-                            Console.WriteLine("3) Living");
-                            Console.WriteLine("4) Playroom");
-                            Console.WriteLine("5) Garage");
-                            Console.WriteLine("6) Sensores");
-                            Console.WriteLine("0) Para volver atras");
-                            opcion5 = int.Parse(Console.ReadLine());
+                            WriteLine("-------OPCIONES-------");
+                            WriteLine("1) Cuartos");
+                            WriteLine("2) Cocina");
+                            WriteLine("3) Living");
+                            WriteLine("4) Playroom");
+                            WriteLine("5) Garage");
+                            WriteLine("6) Sensores");
+                            WriteLine("0) Para volver atras");
+                            opcion5 = int.Parse(ReadLine());
                                 switch(opcion5)
                                 {
                                     case 1:
                                         do
                                         {
-                                            Console.WriteLine("-------Cuartos-------");
-                                            Console.WriteLine("1) 1er cuarto");
-                                            Console.WriteLine("2) 2do cuarto");
-                                            Console.WriteLine("3) 3er cuarto");
-                                            Console.WriteLine("4) 4to cuarto");
-                                            Console.WriteLine("0) Para volver");
-                                            opcion6 = int.Parse(Console.ReadLine());
+                                            WriteLine("-------Cuartos-------");
+                                            WriteLine("1) 1er cuarto");
+                                            WriteLine("2) 2do cuarto");
+                                            WriteLine("3) 3er cuarto");
+                                            WriteLine("4) 4to cuarto");
+                                            WriteLine("0) Para volver");
+                                            opcion6 = int.Parse(ReadLine());
                                             switch(opcion6)
                                             {
                                                 case 1:
                                                     do
                                                     {
-                                                        Console.WriteLine("Cuarto 1: ");
-                                                        Console.WriteLine("1) Para abrir");
-                                                        Console.WriteLine("2) Para cerrar");
-                                                        Console.WriteLine("3) Para bloquear");
-                                                        Console.WriteLine("4) Para desbloquear");
-                                                        Console.WriteLine("0) Para volver atras");
-                                                        opcion7 = int.Parse(Console.ReadLine());
+                                                        WriteLine("Cuarto 1: ");
+                                                        WriteLine("1) Para abrir");
+                                                        WriteLine("2) Para cerrar");
+                                                        WriteLine("3) Para bloquear");
+                                                        WriteLine("4) Para desbloquear");
+                                                        WriteLine("0) Para volver atras");
+                                                        opcion7 = int.Parse(ReadLine());
                                                         switch(opcion7)
                                                         {
                                                             case 1:
                                                             
-                                                            Console.WriteLine("Abriste la puerta");
+                                                            WriteLine("Abriste la puerta");
                                                             cuarto.Abrir(0);
                                                             break;
                                                             case 2:
                                                             
-                                                            Console.WriteLine("Cerraste la puerta");
+                                                            WriteLine("Cerraste la puerta");
                                                             cuarto.Cerrar(0);
                                                             break;
                                                             case 3:
                                                             
-                                                            Console.WriteLine("Bloqueaste la puerta");
+                                                            WriteLine("Bloqueaste la puerta");
                                                             cuarto.bloquear(0);
                                                             break;
                                                             case 4:
                                                             
-                                                            Console.WriteLine("Desbloqueaste la puera");
+                                                            WriteLine("Desbloqueaste la puera");
                                                             cuarto.desbloquear(0);
                                                             break;
                                                         }
@@ -198,33 +199,33 @@ namespace Vs_Code
                                                 case 2:
                                                     do
                                                     {
-                                                        Console.WriteLine("Cuarto 2: ");
-                                                        Console.WriteLine("1) Para abrir");
-                                                        Console.WriteLine("2) Para cerrar");
-                                                        Console.WriteLine("3) Para bloquear");
-                                                        Console.WriteLine("4) Para desbloquear");
-                                                        Console.WriteLine("0) Para volver atras");
-                                                        opcion7 = int.Parse(Console.ReadLine());
+                                                        WriteLine("Cuarto 2: ");
+                                                        WriteLine("1) Para abrir");
+                                                        WriteLine("2) Para cerrar");
+                                                        WriteLine("3) Para bloquear");
+                                                        WriteLine("4) Para desbloquear");
+                                                        WriteLine("0) Para volver atras");
+                                                        opcion7 = int.Parse(ReadLine());
                                                         switch(opcion7)
                                                         {
                                                             case 1:
                                                             
-                                                            Console.WriteLine("Abriste la puerta");
+                                                            WriteLine("Abriste la puerta");
                                                             cuarto1.Abrir(0);
                                                             break;
                                                             case 2:
                                                             
-                                                            Console.WriteLine("Cerraste la puerta");
+                                                            WriteLine("Cerraste la puerta");
                                                             cuarto1.Cerrar(0);
                                                             break;
                                                             case 3:
                                                             
-                                                            Console.WriteLine("Bloqueaste la puerta");
+                                                            WriteLine("Bloqueaste la puerta");
                                                             cuarto1.bloquear(0);
                                                             break;
                                                             case 4:
                                                             
-                                                            Console.WriteLine("Desbloqueaste la puera");
+                                                            WriteLine("Desbloqueaste la puera");
                                                             cuarto1.desbloquear(0);
                                                             break;
                                                         }
@@ -233,33 +234,33 @@ namespace Vs_Code
                                                 case 3:
                                                     do
                                                     {
-                                                        Console.WriteLine("Cuarto 3: ");
-                                                        Console.WriteLine("1) Para abrir");
-                                                        Console.WriteLine("2) Para cerrar");
-                                                        Console.WriteLine("3) Para bloquear");
-                                                        Console.WriteLine("4) Para desbloquear");
-                                                        Console.WriteLine("0) Para volver atras");
-                                                        opcion7 = int.Parse(Console.ReadLine());
+                                                        WriteLine("Cuarto 3: ");
+                                                        WriteLine("1) Para abrir");
+                                                        WriteLine("2) Para cerrar");
+                                                        WriteLine("3) Para bloquear");
+                                                        WriteLine("4) Para desbloquear");
+                                                        WriteLine("0) Para volver atras");
+                                                        opcion7 = int.Parse(ReadLine());
                                                         switch(opcion7)
                                                         {
                                                             case 1:
                                                             
-                                                            Console.WriteLine("Abriste la puerta");
+                                                            WriteLine("Abriste la puerta");
                                                             cuarto2.Abrir(0);
                                                             break;
                                                             case 2:
                                                             
-                                                            Console.WriteLine("Cerraste la puerta");
+                                                            WriteLine("Cerraste la puerta");
                                                             cuarto2.Cerrar(0);
                                                             break;
                                                             case 3:
                                                             
-                                                            Console.WriteLine("Bloqueaste la puerta");
+                                                            WriteLine("Bloqueaste la puerta");
                                                             cuarto2.bloquear(0);
                                                             break;
                                                             case 4:
                                                             
-                                                            Console.WriteLine("Desbloqueaste la puera");
+                                                            WriteLine("Desbloqueaste la puera");
                                                             cuarto2.desbloquear(0);
                                                             break;
                                                         }
@@ -268,33 +269,33 @@ namespace Vs_Code
                                                 case 4:
                                                     do
                                                     {
-                                                        Console.WriteLine("Cuarto 4: ");
-                                                        Console.WriteLine("1) Para abrir");
-                                                        Console.WriteLine("2) Para cerrar");
-                                                        Console.WriteLine("3) Para bloquear");
-                                                        Console.WriteLine("4) Para desbloquear");
-                                                        Console.WriteLine("0) Para volver atras");
-                                                        opcion7 = int.Parse(Console.ReadLine());
+                                                        WriteLine("Cuarto 4: ");
+                                                        WriteLine("1) Para abrir");
+                                                        WriteLine("2) Para cerrar");
+                                                        WriteLine("3) Para bloquear");
+                                                        WriteLine("4) Para desbloquear");
+                                                        WriteLine("0) Para volver atras");
+                                                        opcion7 = int.Parse(ReadLine());
                                                         switch(opcion7)
                                                         {
                                                             case 1:
                                                             
-                                                            Console.WriteLine("Abriste la puerta");
+                                                            WriteLine("Abriste la puerta");
                                                             cuarto3.Abrir(0);
                                                             break;
                                                             case 2:
                                                             
-                                                            Console.WriteLine("Cerraste la puerta");
+                                                            WriteLine("Cerraste la puerta");
                                                             cuarto3.Cerrar(0);
                                                             break;
                                                             case 3:
                                                             
-                                                            Console.WriteLine("Bloqueaste la puerta");
+                                                            WriteLine("Bloqueaste la puerta");
                                                             cuarto3.bloquear(0);
                                                             break;
                                                             case 4:
                                                             
-                                                            Console.WriteLine("Desbloqueaste la puera");
+                                                            WriteLine("Desbloqueaste la puera");
                                                             cuarto3.desbloquear(0);
                                                             break;
                                                         }
@@ -304,61 +305,61 @@ namespace Vs_Code
                                         }while(opcion6!=0);
                                     break;
                                     case 2:
-                                        Console.WriteLine("-------Cocina-------");
-                                        Console.WriteLine("1) Para abrir");
-                                        Console.WriteLine("2) Para cerrar");
-                                        Console.WriteLine("3) Para bloquear");
-                                        Console.WriteLine("4) Para desbloquear");
-                                        Console.WriteLine("0) Para volver atras");
-                                        opcion8 = int.Parse(Console.ReadLine());
+                                        WriteLine("-------Cocina-------");
+                                        WriteLine("1) Para abrir");
+                                        WriteLine("2) Para cerrar");
+                                        WriteLine("3) Para bloquear");
+                                        WriteLine("4) Para desbloquear");
+                                        WriteLine("0) Para volver atras");
+                                        opcion8 = int.Parse(ReadLine());
                                         switch(opcion8)
                                         {
                                             case 1:
-                                            Console.WriteLine("------Puertas------");
-                                            Console.WriteLine("Que puerta queres abir?: ");
-                                            Console.WriteLine("Hay 5 puertas elegi una opcion del 0-4");
-                                            Console.WriteLine("0) Para la primer puerta ");
-                                            Console.WriteLine("1) Para la segunda puerta");
-                                            Console.WriteLine("2) Para la tercer puerta");
-                                            Console.WriteLine("3) Para la cuarta puerta");
-                                            Console.WriteLine("4) Para la quinta puerta");
-                                            cocina.Abrir(int.Parse(Console.ReadLine()));
+                                            WriteLine("------Puertas------");
+                                            WriteLine("Que puerta queres abir?: ");
+                                            WriteLine("Hay 5 puertas elegi una opcion del 0-4");
+                                            WriteLine("0) Para la primer puerta ");
+                                            WriteLine("1) Para la segunda puerta");
+                                            WriteLine("2) Para la tercer puerta");
+                                            WriteLine("3) Para la cuarta puerta");
+                                            WriteLine("4) Para la quinta puerta");
+                                            cocina.Abrir(int.Parse(ReadLine()));
                                             break;
                                             case 2:
-                                            Console.WriteLine("------Puertas------");
-                                            Console.WriteLine("Que puerta queres cerrar?: ");
-                                            Console.WriteLine("Hay 5 puertas elegi una opcion del 0-4");
-                                            Console.WriteLine("0) Para la primer puerta ");
-                                            Console.WriteLine("1) Para la segunda puerta");
-                                            Console.WriteLine("2) Para la tercer puerta");
-                                            Console.WriteLine("3) Para la cuarta puerta");
-                                            Console.WriteLine("4) Para la quinta puerta");
-                                            cocina.Cerrar(int.Parse(Console.ReadLine()));
-                                            Console.WriteLine("Cerraste la puerta");
+                                            WriteLine("------Puertas------");
+                                            WriteLine("Que puerta queres cerrar?: ");
+                                            WriteLine("Hay 5 puertas elegi una opcion del 0-4");
+                                            WriteLine("0) Para la primer puerta ");
+                                            WriteLine("1) Para la segunda puerta");
+                                            WriteLine("2) Para la tercer puerta");
+                                            WriteLine("3) Para la cuarta puerta");
+                                            WriteLine("4) Para la quinta puerta");
+                                            cocina.Cerrar(int.Parse(ReadLine()));
+                                            WriteLine("Cerraste la puerta");
                                             break;
                                             case 3:
-                                            Console.WriteLine("------Puertas------");
-                                            Console.WriteLine("Que puerta queres cerrar?: ");
-                                            Console.WriteLine("Hay 5 puertas elegi una opcion del 0-4");
-                                            Console.WriteLine("0) Para la primer puerta ");
-                                            Console.WriteLine("1) Para la segunda puerta");
-                                            Console.WriteLine("2) Para la tercer puerta");
-                                            Console.WriteLine("3) Para la cuarta puerta");
-                                            Console.WriteLine("4) Para la quinta puerta");
-                                            cocina.Cerrar(int.Parse(Console.ReadLine()));
-                                            Console.WriteLine("Bloqueaste la puerta");
+                                            WriteLine("------Puertas------");
+                                            WriteLine("Que puerta queres cerrar?: ");
+                                            WriteLine("Hay 5 puertas elegi una opcion del 0-4");
+                                            WriteLine("0) Para la primer puerta ");
+                                            WriteLine("1) Para la segunda puerta");
+                                            WriteLine("2) Para la tercer puerta");
+                                            WriteLine("3) Para la cuarta puerta");
+                                            WriteLine("4) Para la quinta puerta");
+                                            cocina.Cerrar(int.Parse(ReadLine()));
+                                            WriteLine("Bloqueaste la puerta");
                                             break;
                                             case 4:
-                                            Console.WriteLine("------Puertas------");
-                                            Console.WriteLine("Que puerta queres cerrar?: ");
-                                            Console.WriteLine("Hay 5 puertas elegi una opcion del 0-4");
-                                            Console.WriteLine("0) Para la primer puerta ");
-                                            Console.WriteLine("1) Para la segunda puerta");
-                                            Console.WriteLine("2) Para la tercer puerta");
-                                            Console.WriteLine("3) Para la cuarta puerta");
-                                            Console.WriteLine("4) Para la quinta puerta");
-                                            cocina.Cerrar(int.Parse(Console.ReadLine()));
-                                            Console.WriteLine("Desbloqueaste la puerta");
+                                            WriteLine("------Puertas------");
+                                            WriteLine("Que puerta queres cerrar?: ");
+                                            WriteLine("Hay 5 puertas elegi una opcion del 0-4");
+                                            WriteLine("0) Para la primer puerta ");
+                                            WriteLine("1) Para la segunda puerta");
+                                            WriteLine("2) Para la tercer puerta");
+                                            WriteLine("3) Para la cuarta puerta");
+                                            WriteLine("4) Para la quinta puerta");
+                                            cocina.Cerrar(int.Parse(ReadLine()));
+                                            WriteLine("Desbloqueaste la puerta");
                                             break;
                                         }
                                     break;
