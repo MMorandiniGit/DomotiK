@@ -27,8 +27,8 @@ namespace Vs_Code
             garage garage = new garage();
             garage garage1 = new garage();
 
-
-            do
+            
+           do
             {
                 
                 WriteLine("-------OPCIONES-------");
